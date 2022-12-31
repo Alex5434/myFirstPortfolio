@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+    background: #000;
+    color: #fff;
+    padding: 30px 30px 0 30px;
+    overflow-x: hidden;
+    
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container .title{
+    margin: -30px 0;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.title nav {
+    top: 20px;
+    position: relative;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.title nav ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.title nav ul li{
+    margin: 0 15px;
+    opacity: 90%;
+}
+.title nav ul li:nth-child(2){
+    opacity: 70%;
+   
+}
+.title nav ul li:nth-child(2):hover{
+    opacity: 100%;
+}
+.title h1{
+    text-transform: uppercase;
+  
+}
+.title h1 span{
+
+    font-size: 1.9em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.first{
+    color: #0BCE8E;
+}
+.title h1 .second{
+    font-size: 1.8em;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 3px #0BCE8E ;
+}
+.center{
+    position: relative;
+    width: 85%;
+    padding: 10px 30px;
+    display: flex;
+   justify-content: flex-start;
+}
+.f1{
+    position: relative;
+}
+.center .f1 h2{
+    font-size: 2em;
+    font-weight: 400;
+    width: 60%;
+}
+.proimg{
+    width: 300px;
+    padding: 0 100px;
+    position: absolute;
+    right: -10%;
+    top: 0;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #0BCE8E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.proimg img{
+    border-radius: 50%;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    transition: .4s ease-out;
+   
+   
+}
+.proimg img:hover{
+    transform: scale(1.1);
+}
+.f1 h2 span{
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+.f1 .ran{
+    font-size: 1.3em;
+    font-weight: 500;
+   padding: 0 3%;
+}
+p{
+   max-width: 60%;
+}
+.flow{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.techskills{
+    width: 100%;
+    position: relative;
+    top: 5%;
+    left: 4%;
+}
+.techskills .tech, .tools{
+    height: 40px;
+    width: 300px;
+    border-left: 5px solid #0BCE8E;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.techskills .tech h2,.tools h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: #0BCE8E;
+}
+.bar ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+hr{
+    border:1px solid #0BCE8E;
+}
+.p hr{
+    border: hidden;
+}
+.p:hover hr{
+    border:1px solid #0BCE8E;
+}
+.flow h3{
+    width: 150px;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.percent .flow, .con .flow{
+       position: relative;
+       margin: 15px 10px;   
+}
+.flow div{
+    height: 7px;
+    width: 400px;
+  
+    background-color: #111;
+}
+.flow .html div, .java div, .c div, .figma div{
+    height:100%;
+    width: 0%;
+    background: #0BCE8E;
+   
+    
+}
+.flow .html div{
+    animation: move 3s ;
+    width: 80%;
+}
+.flow .java div
+{
+     width: 30%;
+    animation: movejava 3s linear;
+}
+.flow .c div{
+    animation: movec 3s ;
+    width: 40%;
+}
+.flow .figma div{
+    width: 50%;
+    animation: movefig 3s ;
+}
+@keyframes move {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes movefig {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes movejava {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+@keyframes movec {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+.flow h3 span{
+    margin-left: 30px;
+    color: #0BCE8E;
+}
+.down{
+    position: absolute;
+    right: 13.5%;
+    bottom: 26%;
+}
+button{
+    width: 150px;
+    height: 35px;
+    margin: 30px;
+    border: none;
+    color: #fff;
+    opacity: 80%;
+    background-color: #000;
+    border-radius: 3px;
+    border:1px solid #0BCE8E;
+    cursor: pointer;
+    transition: 0.2s ease;
+   font-weight: 500;
+   font-size: 15px;
+}
+button:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(11, 206, 142,1);
+    color: #0BCE8E;
+}
+button:hover i{
+         opacity: 1;
+}
+button i{
+    color: #0BCE8E;
+    opacity: 80%;
+    padding: 0 5px;
+}
+#con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact{
+    position: absolute;
+    right: 6%;
+    width: 30%;
+   margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .ph{
+    font-size: 20px;
+    position: relative;
+    color: #0BCE8E;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contact svg{
+    margin-left: 25%;
+    margin-top: -6px;
+}
+.contact .ico {
+   
+    position: relative;
+    margin-top:7%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: cenetr;
+}
+.contact .ico i{
+    margin: 0 15px;
+    font-size: 25px;
+    opacity: 100%;
+    color: #bedad0;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: black;
+}
+.contact .ico i:hover{
+    color: #0BCE8E;
+    box-shadow: 1px 1px 25px #0BCE8E;
+}
+.ran{
+    color: #0BCE8E;
+}
+p span{
+  
+    visibility: hidden;
+}
+
+@media (max-width: 500px){
+   
+    .container{
+        overflow-x:hidden ;
+     
+    }
+    .container .title h1{
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    .bar ul {
+        margin-left: 0%;
+    }
+    .bar ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+    .title nav ul li {
+        padding: 0;
+        margin: 0 7px;
+    }
+    .title{
+        position: sticky;
+        top: 2%;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .center .f1{
+        width: 150%;
+    }
+    .center .f1 h2{
+        font-size: 20px;
+    }
+    .center .f1 h2 span{
+        font-size: 30px;
+        margin-left: -10px;
+    }
+    .f1 p{
+        position: relative;
+        max-width: 90%;
+        font-size: 12px;
+    }
+    .proimg{
+        width: 50%;
+        aspect-ratio: 1;
+        position: relative;
+        margin-top: 10%;
+    }
+    .proimg img{
+        width: max-content;
+        height: 100%;
+    }
+    .techskills .tech h2{
+        font-size:16px;
+    }
+    .techskills .tech, .tools{
+        border-left: 4px solid #0BCE8E;
+    }
+    .percent, .con{
+        width: 200%;
+    }
+    .flow h3{
+        font-size: 13px;
+       width: 400px;
+    }
+    .down{
+        position: absolute;
+        top: 55%;
+        right: 20%;
+    }
+    .contact{
+        width: 50%;
+      right:1%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 13%;
+      margin-bottom: 5%;
+     display: flex;
+     flex-wrap: wrap;
+    }
+    
+}
